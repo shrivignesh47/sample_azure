@@ -2,7 +2,7 @@ trigger:
 - main
 
 pool:
-  vmImage: 'ubuntu-latest'
+  name: Default
 
 steps:
 - task: Maven@3
@@ -11,4 +11,3 @@ steps:
     goals: 'clean test'
     javaHomeOption: 'JDKVersion'
     jdkVersionOption: '1.17'
-    publishJUnitResults: true
