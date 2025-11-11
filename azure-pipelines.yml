@@ -2,7 +2,7 @@ trigger:
 - main
 
 pool:
-  name: Shri
+  name: shri
 
 steps:
 - task: Maven@3
@@ -10,4 +10,4 @@ steps:
     mavenPomFile: 'pom.xml'
     goals: 'clean test'
     javaHomeOption: 'JDKVersion'
-    jdkVersionOption: '1.17'
+    jdkVersionOption: '1.21'
